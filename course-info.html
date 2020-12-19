@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="student_style1.css">
+</head>
+<body>
+<main id="mainn">
+<div id="mySidenav" class="sidenav">
+  <a href="student1(1)a.html">Home</a>
+</div>
+
+<main id="mainn1">
+
+<div class="topctr">
+     <div id ="main" class="menuic" onclick="myFunction(this)">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+</div>
+	 &emsp;&emsp;&emsp;<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/BMS_College_of_Engineering.svg/1200px-BMS_College_of_Engineering.svg.png" height=22px width=22px>&emsp;<cap>BMSCE</cap>
+
+<div class="header-right">
+    <li class="dropdown">
+    <a href="student1(1)a.html">Home</a>
+    <div class="dropdown-content">
+      
+    </div>
+  </li>
+</div>
+  
+</div>
+
+ 
+<html>
+ 
+<head>
+<center>Department of Computer Science</center>
+ 
+<title>Course Info
+ 
+</title>
+ 
+<link rel="stylesheet" href="xyz.css" type="text/css">
+ 
+<style type="text/css">
+	  	body {
+	  margin: 0, auto;
+	  background-image: url("n1.jpg");
+	  background-repeat: no-repeat;
+	  color: #000;
+	  background-attachment: fixed;
+	  background-size: cover;
+	}
+ 
+.vid{font-family:verdana;font-style:italic;color:red;text-align:center}
+ 
+.ani{font-family:tahoma;font-style:italic;font-size:20;text-align:center;}
+ 
+font{font-family:georgia;color:blue;font-size:20}
+ 
+ul{list-style-type:circle}
+ 
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<font>4-Sem Course Info:</font><br>
+ 
+<br>
+  
+<table width="100%" cellspacing="2" cellpadding="2" border="5">
+ 
+<tr>
+ 
+<th>Title</th>
+ 
+<th>Code</th>
+ 
+<th>Credits</th>
+
+<th>Hours Alloted</th>
+
+<th>Outcome</th>
+ 
+</tr>
+ 
+<tr>
+ 
+<td align="center">Linear Algebra</td>
+ 
+<td align="center">19MA4BSLIA</td>
+ 
+<td align="center">4</td>
+
+<td align="center">48</td>
+
+<td align="center">Apply concepts of Matrices,Vectors and Eigen functions.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td align="center">Theoretical Foundations of Computations</td>
+ 
+<td align="center">19CS4PCTFC</td>
+ 
+<td align="center">4</td>
+
+<td align="center">40</td>
+
+<td align="center">Design Automata & Grammar for pattern recognition and syntax checking.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td align="center">Database Base Management Systems</td>
+ 
+<td align="center">19CS4PCDBM</td>
+ 
+<td align="center">4</td>
+
+<td align="center">50</td>
+
+<td align="center">Ability to design and demonstrate conceptual models, query and optimization.</td>
+ 
+</tr>
+
+<tr>
+ 
+<td align="center">Analysis and Design of Algorithms</td>
+ 
+<td align="center">19CS4PCADA</td>
+ 
+<td align="center">4</td>
+
+<td align="center">55</td>
+
+<td align="center">Ability to solve problems using an appropriate designing method and find time efficiency.</td>
+ 
+</tr>
+
+<tr>
+ 
+<td align="center">Operating Systems</td>
+ 
+<td align="center">19CS4PCOPS</td>
+ 
+<td align="center">4</td>
+
+<td align="center">45</td>
+
+<td align="center">Ability to Demonstrate the Basic Concepts of Operating System.</td>
+ 
+</tr>
+
+<tr>
+ 
+<td align="center">Environmental studies</td>
+ 
+<td align="center">19CS4PCOPS</td>
+ 
+<td align="center">2</td>
+
+<td align="center">35</td>
+
+<td align="center">To encourage student to prevent the environmental degradation.</td>
+ 
+</tr>
+
+<tr>
+ 
+<td align="center">Project Work-2</td>
+ 
+<td align="center">19CS4PWPW2</td>
+ 
+<td align="center">2</td>
+
+<td align="center">40</td>
+
+<td align="center">Ability to apply practical knowledge and latest tools usage along with project development.</td>
+ 
+</tr>
+ 
+</table>
+ 
+</body>
+ 
+</html>
+
+
+
+
+
+<script>
+
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+function myFunction(x) {
+if (x.classList.contains("menuic"))
+openNav();
+if(x.classList.contains("change"))
+closeNav();
+x.classList.toggle("change");
+}
+ function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+document.getElementById("mainn").style.marginLeft = "250px";
+document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("mainn").style.marginLeft = "0";
+document.body.style.backgroundColor = "#f2f2f2";
+}
+function myFunction1(x) {
+if (x.classList.contains("menuic1"))
+openNav1();
+if(x.classList.contains("change1"))
+closeNav1();
+x.classList.toggle("change1");
+}
+ function openNav1() {
+document.getElementById("mySidenav1").style.width = "250px";
+document.getElementById("mainn1").style.marginLeft = "250px";
+document.body.style.backgroundColor = "rgba(0,0,0,.4)";
+
+}
+function closeNav1() {
+document.getElementById("mySidenav1").style.width = "0";
+document.getElementById("mainn1").style.marginLeft = "0";
+document.body.style.backgroundColor = "#f2f2f2";
+}
+
+</script>
+
+
+
+</main>
+
+</body>
